@@ -25,6 +25,17 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<Connection> connectionList;
 
+    public User() {
+    }
+
+    public User(String username, String password,String countryName) {
+        this.username = username;
+        this.password = password;
+
+       
+        originalCountry.setCountryName(CountryName.valueOf(countryName));
+    }
+
     public int getId() {
         return id;
     }
