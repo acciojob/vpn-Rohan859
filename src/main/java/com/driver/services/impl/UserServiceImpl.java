@@ -36,7 +36,7 @@ public class UserServiceImpl implements UserService {
         if(!isPresent){
             throw new Exception("Country not found");
         }
-        Country country=new Country(CountryName.valueOf(countryName));
+        Country country=new Country();
         country.setCountryName(CountryName.valueOf(CountryNameInUpperCase));
         country.setCode(CountryName.valueOf(CountryNameInUpperCase).toCode());
 

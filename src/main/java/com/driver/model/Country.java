@@ -19,10 +19,9 @@ public class Country
 
     ServiceProvider serviceProvider;
 
-    public Country(CountryName countryName) {
-    }
 
-   
+
+
 
     public int getId() {
         return id;
