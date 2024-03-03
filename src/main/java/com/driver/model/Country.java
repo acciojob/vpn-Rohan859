@@ -19,13 +19,10 @@ public class Country
 
     ServiceProvider serviceProvider;
 
-    public Country() {
+    public Country(CountryName countryName) {
     }
 
-    public Country(CountryName countryName) {
-        this.countryName = countryName;
-       // this.code = code;
-    }
+   
 
     public int getId() {
         return id;
